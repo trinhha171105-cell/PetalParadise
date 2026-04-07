@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Petal Paradise</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <img src="images/logo.png" alt="Petal Paradise Logo" class="logo">
+</header>
+
+<nav class="navbar">
+  <a href="index.html">Home</a>
+  <a href="gioithieu.html">About</a>
+  <a href="sanpham.html">Products</a>
+  <a href="lienhe.html">Contact</a>
+  <a href="dangnhap.html">Login</a>
+</nav>
+
+<section class="banner"></section>
+
+<section class="intro">
+  <div class="line"></div>
+  <h2>FEATURED PRODUCTS</h2>
+  <div class="line"></div>
+</section>
+
+<section class="products" id="products">
+  <div class="card">
+    <img src="https://i.pinimg.com/736x/2c/39/b2/2c39b28df916be62e148c5b669db5118.jpg" alt="Pastel rose bouquet">
+    <h3>Sophia Roses</h3>
+    <p class="price">1,000,000 VND</p>
+    <button>Buy Now</button>
+  </div>
+
+  <div class="card">
+    <img src="images/item2.jpg" alt="White tulips">
+    <h3>White Tulips</h3>
+    <p class="price">2,000,000 VND</p>
+    <button>Buy Now</button>
+  </div>
+
+  <div class="card">
+    <img src="images/item3.jpg" alt="Chrysanthemum flowers">
+    <h3>Willow Blossom</h3>
+    <p class="price">1,350,000 VND</p>
+    <button>Buy Now</button>
+  </div>
+
+  <div class="card">
+    <img src="images/item4.jpg" alt="Celebration bouquet">
+    <h3>Pink Lilies</h3>
+    <p class="price">1,500,000 VND</p>
+    <button>Buy Now</button>
+  </div>
+</section>
+
+<section class="about">
+  <h2>Why do customers love Petal Paradise?</h2>
+  <div class="features">
+    <div class="feature">
+      <span>✿</span>
+      <h4>Fresh flowers daily</h4>
+      <p>Carefully selected flowers, always fresh and vibrant.</p>
+    </div>
+    <div class="feature">
+      <span>⛟</span>
+      <h4>Fast delivery</h4>
+      <p>Same-day delivery available within the city.</p>
+    </div>
+    <div class="feature">
+      <span>🗪</span>
+      <h4>Dedicated service</h4>
+      <p>Always ready to support customers with all their needs.</p>
+    </div>
+  </div>
+</section>
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+<footer class="footer">
+  <p>© 2026 Petal Paradise | Online flower shop</p>
+</footer>
+
+<script>
+  const buttons = document.querySelectorAll(".card button");
+
+  buttons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      const productName = this.parentElement.querySelector("h3").textContent;
+      alert("You selected: " + productName);
+    });
+  });
+
+  const cards = document.querySelectorAll(".card");
+
+  cards.forEach(function (card) {
+    card.addEventListener("mouseenter", function () {
+      card.style.transform = "translateY(-8px)";
+      card.style.transition = "0.3s";
+    });
+
+    card.addEventListener("mouseleave", function () {
+      card.style.transform = "translateY(0)";
+    });
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Petal Paradise</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <img src="images/logo.png" alt="Petal Paradise Logo" class="logo">
+</header>
+
+<nav class="navbar">
+  <a href="index.html">Home</a>
+  <a href="gioithieu.html">About</a>
+  <a href="sanpham.html">Products</a>
+  <a href="lienhe.html">Contact</a>
+  <a href="dangnhap.html">Login</a>
+</nav>
+
+  <section class="shop-layout">
+
+    <aside class="shop-sidebar">
+  <button class="category-btn active" onclick="filterProducts('all', this)">ALL PRODUCTS</button>
+  <button class="category-btn" onclick="filterProducts('hoacuoi', this)">WEDDING FLOWERS</button>
+  <button class="category-btn" onclick="filterProducts('hoasinhnhat', this)">BIRTHDAY FLOWERS</button>
+  <button class="category-btn" onclick="filterProducts('hoachucmung', this)">CONGRATULATION FLOWERS</button>
+  <button class="category-btn" onclick="filterProducts('hoakhaitruong', this)">GRAND OPENING</button>
+  <button class="category-btn" onclick="filterProducts('hoatinhyeu', this)">LOVE FLOWERS</button>
+</aside>
+    
+    <section class="shop-main">
+      <section class="shop-header">
+        <h1 id="shop-title">ALL PRODUCTS</h1>
+        <p class="shop-sub">Check it out our flower collection 𖹭</p>
+      </section>
+
+      <section class="shop-products">
+
+        <div class="shop-card" data-category="hoacuoi">
+          <div class="heart">♡</div>
+          <img src="https://i.pinimg.com/736x/9f/bb/71/9fbb717d9a5d7f7981a28775f29a5041.jpg" alt="Veulor Dreams">
+          <h3>Veulor Dreams</h3>
+          <p class="shop-price">1.000.000VNĐ</p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <div class="shop-card" data-category="hoacuoi">
+          <div class="heart">♡</div>
+          <img src="https://i.pinimg.com/736x/b7/c9/b2/b7c9b295aeb59a6d9cf61234d3863971.jpg" alt="Red Phalaenopsis Orchids">
+          <h3>Red Phalaenopsis Orchids</h3>
+          <p class="shop-price">1.500.000VNĐ</p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <div class="shop-card" data-category="hoacuoi">
+          <div class="heart">♡</div>
+          <img src="https://i.pinimg.com/1200x/30/2c/ef/302cef164853947c8b4fcf641f788d66.jpg" alt="White Phalaenopsis Orchids">
+          <h3>White Phalaenopsis Orchids</h3>
+          <p class="shop-price">1.500.000VNĐ</p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <div class="shop-card" data-category="hoacuoi">
+          <div class="heart">♡</div>
+          <img src="https://i.pinimg.com/1200x/d1/ec/96/d1ec96368d4a4133adc3e18a5715d2fe.jpg" alt="Hoa Hồng Pastel">
+          <h3>Ethereal White</h3>
+          <p class="shop-price">800.000VNĐ</p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <div class="shop-card" data-category="hoacuoi">
+          <div class="heart">♡</div>
+          <img src="https://i.pinimg.com/1200x/17/b2/d1/17b2d1e576eb04fd579b463c91b37f5a.jpg" alt="Tulip Trắng">
+          <h3>Purple Clematis</h3>
+          <p class="shop-price">1.000.000VNĐ</p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+
+        
+        <div class="shop-card" data-category="hoatinhyeu">
+          <div class="heart">♡</div>
+          <img src="https://i.pinimg.com/736x/54/6d/3a/546d3a6772cfd3926678a9b38be8547a.jpg" alt="Hoa Ly Hồng">
+          <h3>Lilac Dream</h3>
+          <p class="shop-price">800.000VNĐ</p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <div class="shop-card" data-category="hoatinhyeu">
+          <div class="heart">♡</div>
+          <img src="https://i.pinimg.com/1200x/b8/38/d5/b838d5f50f051d7d16510691979e1f3f.jpg" alt="Hoa Ly Hồng">
+          <h3>Blush Muse</h3>
+          <p class="shop-price">1.000.000VNĐ</p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <div class="shop-card" data-category="hoatinhyeu">
+          <div class="heart">♡</div>
+          <img src="https://i.pinimg.com/1200x/da/bb/45/dabb459edb4d93a78ca230ad80129f6f.jpg" alt="Hoa Ly Hồng">
+          <h3>Pink Serenity</h3>
+          <p class="shop-price">1.200.000VNĐ</p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <div class="shop-card" data-category="hoatinhyeu">
+          <div class="heart">♡</div>
+          <img src="https://i.pinimg.com/1200x/92/08/b8/9208b83314c2274c2abd9c9727517204.jpg" alt="Hoa Ly Hồng">
+          <h3>Pearl Garden</h3>
+          <p class="shop-price">2.000.000VNĐ</p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <div class="shop-card" data-category="hoatinhyeu">
+          <div class="heart">♡</div>
+          <img src="https://i.pinimg.com/736x/79/fd/e7/79fde779905552ec92e2b0daf053d927.jpg" alt="Hoa Ly Hồng">
+          <h3>Pink Tulips</h3>
+          <p class="shop-price">2.500.000VNĐ</p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <div class="shop-card" data-category="hoatinhyeu">
+          <div class="heart">♡</div>
+          <img src="images/item3.jpg" alt="Hoa Ly Hồng">
+          <h3>Willow Blossom</h3>
+          <p class="shop-price">1.100.000VNĐ</p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <div class="shop-card" data-category="hoasinhnhat">
+          <div class="heart">♡</div>
+          <img src="https://i.pinimg.com/736x/38/de/9f/38de9f2fdb07b1d74672a5ad9d2708bc.jpg" alt="Bó Hoa Sinh Nhật">
+          <h3>Sweet Blossom</h3>
+          <p class="shop-price">2.220.000VNĐ</p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+
+         <div class="shop-card" data-category="hoasinhnhat">
+          <div class="heart">♡</div>
+          <img src="https://i.pinimg.com/736x/d4/d4/14/d4d4149f048699c01036c6b5a6ce604b.jpg" alt="Bó Hoa Sinh Nhật">
+          <h3>Rosy Dream</h3>
+          <p class="shop-price">1.100.000VNĐ</p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+
+         <div class="shop-card" data-category="hoasinhnhat">
+          <div class="heart">♡</div>
+          <img src="https://i.pinimg.com/736x/5b/5e/5b/5b5e5b5a14f5c6d490ba4e628f793fa3.jpg" alt="Bó Hoa Sinh Nhật">
+          <h3>White Roses</h3>
+          <p class="shop-price">1.000.000VNĐ</p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <div class="shop-card" data-category="hoasinhnhat">
+          <div class="heart">♡</div>
+          <img src="https://i.pinimg.com/736x/11/f8/89/11f88991dc480f437a82559f304542ba.jpg" alt="Bó Hoa Sinh Nhật">
+          <h3>Pure Bloom</h3>
+          <p class="shop-price">1.200.000VNĐ</p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+
+         <div class="shop-card" data-category="hoasinhnhat">
+          <div class="heart">♡</div>
+          <img src="https://i.pinimg.com/1200x/d7/21/be/d721be6ea5992cc75dd303da4f4d34cb.jpg" alt="Bó Hoa Sinh Nhật">
+          <h3>Irovy Whisper</h3>
+          <p class="shop-price">1.550.000VNĐ</p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+
+         <div class="shop-card" data-category="hoasinhnhat">
+          <div class="heart">♡</div>
+          <img src="https://i.pinimg.com/736x/75/71/3b/75713b0fc8f3aa30f0d918f65285b5d1.jpg" alt="Bó Hoa Sinh Nhật">
+          <h3>Blue Serenity</h3>
+          <p class="shop-price">1.550.000VNĐ</p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <div class="shop-card" data-category="hoachucmung">
+          <div class="heart">♡</div>
+          <img src="https://i.pinimg.com/736x/88/fa/27/88fa27eb7ce2810de68af22e79930b1c.jpg" alt="Giỏ Hoa Chúc Mừng">
+          <h3>Ivory Luxe</h3>
+          <p class="shop-price">3.000.000VNĐ</p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <div class="shop-card" data-category="hoachucmung">
+          <div class="heart">♡</div>
+          <img src="https://i.pinimg.com/736x/7b/45/34/7b4534229b607eec5f943f22efd31ffd.jpg" alt="Giỏ Hoa Chúc Mừng">
+          <h3>Blush Elegance</h3>
+          <p class="shop-price">2.900.000VNĐ</p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <div class="shop-card" data-category="hoachucmung">
+          <div class="heart">♡</div>
+          <img src="https://i.pinimg.com/736x/2e/d6/f5/2ed6f5b30945c71a650f2bf9c8183569.jpg" alt="Giỏ Hoa Chúc Mừng">
+          <h3>Róse Garden</h3>
+          <p class="shop-price">3.200.000VNĐ</p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <div class="shop-card" data-category="hoakhaitruong">
+          <div class="heart">♡</div>
+          <img src="https://i.pinimg.com/1200x/df/7f/ab/df7fabe8bd8f0a87db04d29fbd3faf04.jpg" alt="Kệ Hoa Khai Trương">
+          <h3>Grand Celebration</h3>
+          <p class="shop-price">4.000.000VNĐ</p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <div class="shop-card" data-category="hoakhaitruong">
+          <div class="heart">♡</div>
+          <img src="https://i.pinimg.com/1200x/ba/65/da/ba65da9baae8f767d9dbfe926816e4e2.jpg" alt="Kệ Hoa Khai Trương">
+          <h3>Crimson Grand</h3>
+          <p class="shop-price">4.200.000VNĐ</p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <div class="shop-card" data-category="hoakhaitruong">
+          <div class="heart">♡</div>
+          <img src="https://i.pinimg.com/1200x/f5/fc/b9/f5fcb970da51d5a2ed9b64514d232080.jpg" alt="Kệ Hoa Khai Trương">
+          <h3>Grand Red Bloom</h3>
+          <p class="shop-price">4.200.000VNĐ</p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+
+      </section>
+    </section>
+  </section>
+
+  <section class="about-end">
+    <p>Join Petal Paradise and receive</p>
+    <h2 class="about-mini">20% off your first flower purchase</h2>
+    <h1 class="decor">────୨ৎ────</h1>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Petal Paradise | Online flower shop</p>
+  </footer>
+
+  <script>
+    function filterProducts(category, btn) {
+      const cards = document.querySelectorAll('.shop-card');
+      const buttons = document.querySelectorAll('.category-btn');
+      const title = document.getElementById('shop-title');
+
+      buttons.forEach(button => button.classList.remove('active'));
+      btn.classList.add('active');
+
+      cards.forEach(card => {
+        if (category === 'all' || card.dataset.category === category) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      if (category === 'all') title.textContent = 'ALL PRODUCTS';
+      if (category === 'hoacuoi') title.textContent = 'WEDDING FLOWERS';
+      if (category === 'hoasinhnhat') title.textContent = 'BIRTHDAY FLOWERS';
+      if (category === 'hoachucmung') title.textContent = 'CONGRATULATION FLOWERS';
+      if (category === 'hoakhaitruong') title.textContent = 'GRAND OPENING';
+      if (category === 'hoatinhyeu') title.textContent = 'LOVE FLOWERS';
+    }
+  </script>
+  <script>
+  const buyButtons = document.querySelectorAll(".buy-btn");
+
+  buyButtons.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      const productName = this.parentElement.querySelector("h3").textContent;
+      alert("You have chosen: " + productName);
+    });
+  });
+</script>
+
+</body>
+</html>

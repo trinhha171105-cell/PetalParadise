@@ -1,0 +1,689 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fffafc;
+  color: #5b4b4b;
+}
+
+.topbar {
+  background: #ffffff;
+  text-align: center;
+  padding: 14px 0;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  height: 80px;
+  width: auto;
+}
+
+.navbar {
+  background: #e7c1ca;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 16px 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #6e5a5a;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.navbar a:hover {
+  color: #ff5fa2;
+}
+
+.banner {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: url("images/banner.png") center/cover no-repeat;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin: 40px 20px 25px;
+}
+
+.intro h2 {
+  color: #ff4f9a;
+  font-size: 34px;
+  text-align: center;
+  font-family: 'Gilda Display', serif;
+}
+
+.line {
+  width: 180px;
+  height: 1px;
+  background: #ead6dc;
+}
+
+.products {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.card {
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(233, 170, 191, 0.18);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+  padding-bottom: 18px;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(233, 170, 191, 0.28);
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin: 18px 12px 8px;
+  color: #6b5058;
+  font-family: 'Gilda Display', serif;
+}
+
+.price {
+  color: #ff4f9a;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+
+.card button {
+  background: #ff6aaa;
+  color: white;
+  border: none;
+  padding: 11px 22px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.card button:hover {
+  background: #ff4f9a;
+}
+
+.about {
+  background: #fff1f5;
+  padding: 55px 20px;
+  text-align: center;
+}
+
+.about h2 {
+  color: #d94f8c;
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-family: 'Gilda Display', serif;
+}
+
+.features {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.feature {
+  background: white;
+  border-radius: 18px;
+  padding: 28px 20px;
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.05);
+}
+
+.feature span {
+  font-size: 34px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.feature h4 {
+  color: #7a5a61;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  color: #8b747b;
+  line-height: 1.6;
+}
+
+.footer {
+  background: #f7d6de;
+  text-align: center;
+  padding: 18px;
+  color: #6d5a5f;
+  font-size: 14px;
+}
+
+@media (max-width: 992px) {
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .products {
+    grid-template-columns: 1fr;
+  }
+
+  .intro {
+    flex-direction: column;
+  }
+
+  .line {
+    width: 120px;
+  }
+}
+
+/*GIỚI THIỆU*/
+.timeline {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.introduce {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin: 40px 20px 25px;
+  font-family: cursive;
+}
+
+.timeline-box {
+  width: 30%;
+}
+.timeline {
+  width: 100%;
+  max-width: 1200px;
+  margin: 100px auto;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.timeline-box {
+  width: 100%;
+  background: white;
+  border: 1px solid #ead6dc;
+  border-radius: 18px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.timeline-box img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+.timeline-box h2 {
+  font-size: 32px;
+  color: #8b6f77;
+  margin-bottom: 12px;
+  font-family: 'Gilda Display', serif;
+}
+
+.timeline-box p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #6b5058;
+}
+@media (max-width: 768px) {
+  .timeline {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timeline-box {
+    width: 90%;
+  }
+}
+
+/*SẢN PHẨM*/
+.shop-layout {
+  width: 90%;
+  max-width: 1500px;
+  margin: 30px auto 60px;
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.shop-sidebar {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  flex-shrink: 0;
+  position: sticky;
+  top: 20px;
+}
+
+.category-btn {
+  border: 2px solid #f3c7d4;
+  background: #fff;
+  color: #f0a9c0;
+  border-radius: 22px;
+  padding: 18px 20px;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: 'Gilda Display', serif;
+}
+
+.category-btn:hover,
+.category-btn.active {
+  background: #efb7cb;
+  color: white;
+}
+
+.shop-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.shop-header {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 0 20px;
+  text-align: left;
+  font-family: cursive;
+  margin-top: 50px;
+}
+
+.shop-header h1 {
+  color: #f3b7cc;
+  font-size: 30px;
+  font-style: italic;
+  margin-bottom: 10px;
+  font-family: cursive;
+}
+
+.shop-sub {
+  font-size: 20px;
+  color: #333;
+  font-style: italic;
+  margin-bottom: 30px;
+  font-family: 'Gilda Display', serif;
+}
+
+.shop-products {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px 30px;
+  font-family: "Bookman Old Style", serif;
+}
+
+.shop-card {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  font-family: "Bookman Old Style", serif;
+}
+
+.heart {
+  width: 52px;
+  height: 52px;
+  border: 2px solid #f3b7cc;
+  border-radius: 50%;
+  color: #f3b7cc;
+  font-size: 28px;
+  line-height: 48px;
+  margin: 0 auto 18px;
+}
+
+.shop-card img {
+  width: 100%;
+  max-width: 260px;
+  height: 430px;
+  object-fit: cover;
+  border-radius: 50px;
+  margin: 0 auto 30px;
+  display: block;
+}
+
+.shop-card h3 {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: normal;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.shop-price {
+  font-size: 18px;
+  color: #f3b7cc;
+}
+
+.sold-out {
+  position: absolute;
+  left: 50%;
+  top: 250px;
+  transform: translateX(-50%);
+  border: 2px solid #f3b7cc;
+  color: #f3b7cc;
+  border-radius: 999px;
+  padding: 10px 45px;
+  font-style: italic;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.about-end {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  font-family: 'Gilda Display', serif;
+  font-size: 25px;
+}
+
+.about-end p {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.about-end h2 {
+  color: #f3b7cc;
+  margin: 20px 0;
+  font-size: 30px;
+}
+
+.about-mini {
+  font-size: 18px;
+  color: #f3b7cc;
+  font-style: italic;
+  font-family: monospace;
+}
+
+.decor {
+  font-weight: 300;
+  font-size: 20px;
+  color: #eac2cd;
+}
+
+.buy-btn {
+  margin-top: 15px;
+  padding: 10px 25px;
+  border: 1.5px solid #f3b7cc;
+  background: transparent;
+  color: #f3b7cc;
+  font-size: 16px;
+  font-style: italic;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 20px;
+}
+
+.buy-btn:hover {
+  background: #f3b7cc;
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  .shop-products {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 992px) {
+  .shop-layout {
+    flex-direction: column;
+  }
+
+  .shop-sidebar {
+    width: 100%;
+    position: static;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .category-btn {
+    flex: 1 1 200px;
+  }
+
+  .shop-products {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .shop-header h1 {
+    font-size: 42px;
+  }
+
+  .shop-mini {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 600px) {
+  .shop-header {
+    text-align: center;
+  }
+
+  .shop-header h1 {
+    font-size: 34px;
+  }
+
+  .shop-sub {
+    font-size: 16px;
+  }
+
+  .shop-products {
+    grid-template-columns: 1fr;
+  }
+
+  .shop-sidebar {
+    flex-direction: column;
+  }
+
+  .shop-card img {
+    height: 360px;
+  }
+
+  .sold-out {
+    top: 220px;
+  }
+}
+
+/*LIÊN HỆ*/
+.contact-card h1 {
+  font-family: 'Sacrameto', cursive;
+  font-size: 32px;
+  color: #c86b85;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+
+.contact-content {
+  max-width: 600px;
+  margin: 20px auto;   
+  background: #f8cdd3;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 200px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.contact-content p{
+  line-height: 1.8;
+  color: #9b4848;
+  font-family: 'Gilda Display', serif;
+  font-size: 20px;
+}
+
+.contact-info {
+  margin-top: 10px;
+}
+
+.contact-info p {
+  margin: 6px 0;
+}
+
+.social-list {
+  margin-top: 15px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 8px 0;
+  font-size: 18px;
+  color: #734747;
+  text-decoration: none;
+}
+
+.contact-item svg {
+  width: 22px;
+  height: 22px;
+}
+
+/* Hover xịn hơn */
+.contact-item:hover {
+  color: #b16987;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+/*LOGIN*/
+.login-page {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fffafc;
+}
+
+.login-box {
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.login-box h1 {
+  font-family: 'Gilda Display', serif;
+  font-size: 40px;
+  color: #f3b7cc;
+  font-style: italic;
+  margin-bottom: 40px;
+}
+
+.login-box form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-box input {
+  width: 100%;
+  max-width: 400px;
+  padding: 18px 20px;
+  margin-bottom: 25px;
+  border: 1.8px solid #f5d6df;
+  border-radius: 12px;
+  background: transparent;
+  font-size: 18px;
+  color: #888;
+  outline: none;
+}
+
+.login-box input::placeholder {
+  color: #aaa;
+}
+
+.forgot-text {
+  font-size: 18px;
+  color: #f3b7cc;
+  font-style: italic;
+  margin-bottom: 35px;
+  font-family: 'Gilda Display', serif;
+}
+
+.login-box button {
+  width: 100%;
+  max-width: 400px;
+  padding: 18px;
+  background: #f9e4ea;
+  border: none;
+  border-radius: 12px;
+  color: #f3b7cc;
+  font-size: 22px;
+  cursor: pointer;
+  margin-bottom: 35px;
+  transition: 0.3s;
+}
+
+.login-box button:hover {
+  background: #f3d4de;
+}
+
+.create-account {
+  font-size: 18px;
+  color: #f3b7cc;
+  font-style: italic;
+  font-family: 'Gilda Display', serif;
+  margin-bottom: 20px;
+}
+
+.login-message {
+  font-size: 18px;
+  margin-top: 10px;
+  font-family: "Bookman Old Style", serif;
+}
+
+@media (max-width: 768px) {
+  .login-box h1 {
+    font-size: 42px;
+  }
+
+  .login-box input,
+  .login-box button {
+    max-width: 100%;
+  }
+}
