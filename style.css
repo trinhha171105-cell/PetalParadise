@@ -681,6 +681,58 @@ body {
   .login-box h1 {
     font-size: 42px;
   }
+  .popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup-box {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  animation: fadeIn 0.3s ease;
+}
+
+.popup-box p {
+  font-size: 18px;
+  color: #6e5a5a;
+  margin-bottom: 20px;
+}
+
+.popup-box button {
+  background: #ff6aaa;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.popup-box button:hover {
+  background: #ff4f9a;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 
   .login-box input,
   .login-box button {
