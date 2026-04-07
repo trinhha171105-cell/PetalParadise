@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Petal Paradise</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
@@ -234,6 +234,13 @@
     <h1 class="decor">────୨ৎ────</h1>
   </section>
 
+<div id="popup" class="popup">
+  <div class="popup-box">
+    <p id="popup-text"></p>
+    <button onclick="closePopup()">OK</button>
+  </div>
+</div>
+
   <footer class="footer">
     <p>© 2026 Petal Paradise | Online flower shop</p>
   </footer>
@@ -262,16 +269,19 @@
       if (category === 'hoakhaitruong') title.textContent = 'GRAND OPENING';
       if (category === 'hoatinhyeu') title.textContent = 'LOVE FLOWERS';
     }
-  </script>
-  <script>
+  
   const buyButtons = document.querySelectorAll(".buy-btn");
 
   buyButtons.forEach(function (btn) {
     btn.addEventListener("click", function () {
       const productName = this.parentElement.querySelector("h3").textContent;
-      alert("You have chosen: " + productName);
+      document.getElementById("popup-text").innerText = "You selected: " + productName;
+      document.getElementById("popup").style.display = "flex";
     });
   });
+  function closePopup() {
+  document.getElementById("popup").style.display = "none";
+}
 </script>
 
 </body>
