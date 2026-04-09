@@ -51,7 +51,7 @@ body {
   background: url("images/banner.png") center/cover no-repeat;
 }
 
-.imagesbanner {
+.imageBanner {
   max-width: 100%;
 }
 .intro {
