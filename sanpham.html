@@ -23,7 +23,7 @@
   <section class="shop-layout">
 
     <aside class="shop-sidebar">
-  <button class="category-btn active" onclick="filterProducts('all', this)">ALL PRODUCTS</button>
+  <button class="category-btn special-font active" onclick="filterProducts('all', this)">ALL PRODUCTS</button>
   <button class="category-btn" onclick="filterProducts('hoacuoi', this)">WEDDING FLOWERS</button>
   <button class="category-btn" onclick="filterProducts('hoasinhnhat', this)">BIRTHDAY FLOWERS</button>
   <button class="category-btn" onclick="filterProducts('hoachucmung', this)">CONGRATULATION FLOWERS</button>
@@ -33,8 +33,8 @@
     
     <section class="shop-main">
       <section class="shop-header">
-        <h1 id="shop-title">ALL PRODUCTS</h1>
-        <p class="shop-sub">Check it out our flower collection 𖹭</p>
+        <h1 id="shop-title">ALL PRODUCTS</span></h1>
+        <p class="shop-sub">Check it out our flower collection ♥︎</p>
       </section>
 
       <section class="shop-products">
@@ -224,6 +224,13 @@
           <button class="buy-btn">Buy Now</button>
         </div>
 
+        <div id="popup" class="popup">
+          <div class="popup-box">
+          <p id="popup-text">You selected...</p>
+          <button onclick="closePopup()">OK</button>
+          </div>
+        </div>
+
       </section>
     </section>
   </section>
@@ -234,12 +241,7 @@
     <h1 class="decor">────୨ৎ────</h1>
   </section>
 
-<div id="popup" class="popup">
-  <div class="popup-box">
-    <p id="popup-text"></p>
-    <button onclick="closePopup()">OK</button>
-  </div>
-</div>
+
 
   <footer class="footer">
     <p>© 2026 Petal Paradise | Online flower shop</p>
