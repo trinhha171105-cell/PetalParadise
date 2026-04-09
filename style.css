@@ -9,6 +9,7 @@ body {
   font-family: Arial, sans-serif;
   background: #fffafc;
   color: #5b4b4b;
+  overflow-x: hidden;
 }
 
 .topbar {
@@ -50,6 +51,9 @@ body {
   background: url("images/banner.png") center/cover no-repeat;
 }
 
+.imageBanner {
+  max-width: 100%;
+}
 .intro {
   display: flex;
   align-items: center;
